@@ -1,5 +1,12 @@
+.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 body{ color: rgb(240, 248, 255);
 background-color: black;
+font-family: "Roboto Mono", monospace;
 }
 
 
@@ -11,7 +18,7 @@ header{
 }
 
 .chamada{
-    background: rgb(184, 156, 213);
+    background: rgb(156, 169, 213);
 padding-bottom: 80px;
     padding-top: 80px;
     display: flex;
@@ -20,16 +27,27 @@ padding-bottom: 80px;
 .chamada-texto {
     margin-right: 5%;
 }
-img {
-height: 200px;
-}
-.categoria-videos {
+
+.categoria-videos {.categoria-videos img
   display: flex;
   overflow-x: auto;
   gap: 10px;
-gap: 10px;
+  gap: 10px;
 }
+
 section {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.categoria-videos img{
+  height:170px;
+  opacity: 0.5;
+}
+
+  .categoria-videos img:hover{
+    opacity: 1.0;
+    border: solid 4px greenyellow;
+  }
+
+
